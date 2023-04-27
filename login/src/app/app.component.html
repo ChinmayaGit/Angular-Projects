@@ -1,0 +1,119 @@
+<div class="container">
+  <div class="row pt-3 justify-content-center">
+    <div class="card" style="width: 22rem; height: justify-content-center">
+      <div class="card-body">
+        <h5 class="card-title">SignIn</h5>
+        <form (ngSubmit)="SignIn()">
+          <div class="form-group pb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              [(ngModel)]="user.email"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group pb-3">
+            <label>Password</label>
+            <input
+              type="password"
+              name="password"
+              [(ngModel)]="user.password"
+              class="form-control"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="width: 22rem; height: 25rem"
+      [ngClass]="showInfo ? 'hideData' : 'showData'"
+    >
+      <div class="card-body">
+        <h5 class="card-title">SignUp</h5>
+        <form (ngSubmit)="SignUp()">
+          <div class="form-group">
+            <label>Id</label>
+            <input
+              type="number"
+              name="id"
+              [(ngModel)]="user.id"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              [(ngModel)]="user.name"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group pb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              [(ngModel)]="user.email"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group pb-3">
+            <label>Password</label>
+            <input
+              type="password"
+              name="password"
+              [(ngModel)]="user.password"
+              class="form-control"
+            />
+          </div>
+
+          <button type="submittwo" class="btn btn-dark">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="width: 18rem"
+      [ngClass]="showInfo ? 'showData' : 'hideData'"
+    >
+      <img
+        src="https://www.shutterstock.com/image-vector/welcome-poster-spectrum-brush-strokes-260nw-1146069941.jpg"
+        class="card-img-top"
+        alt="https://www.shutterstock.com/image-vector/welcome-poster-spectrum-brush-strokes-260nw-1146069941.jpg"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Welcome</h5>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <h5 class="pb-3">DataBase</h5>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.password }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

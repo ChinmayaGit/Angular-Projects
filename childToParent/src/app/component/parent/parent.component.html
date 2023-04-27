@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h1>Parent Component</h1>
+
+    <p>data from child:{{ ChildData }}</p>
+  </div>
+  <div class="col-sm-6">
+    <h1>Child Component</h1>
+
+    <app-child (gift)="dataFromChild($event)"></app-child>
+  </div>
+</div>

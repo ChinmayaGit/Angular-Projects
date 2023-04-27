@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "john",
+      "email": "john@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "max",
+      "email": "max@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "name": "mathew",
+      "email": "mathew@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 4,
+      "name": "chinu",
+      "email": "chinu@gmail.com",
+      "password": "12543521"
+    },
+    {
+      "id": 5,
+      "name": "chinu",
+      "email": "chinu@gmail.com",
+      "password": "12543521"
+    },
+    {
+      "id": 6,
+      "name": "",
+      "email": "sbfhe",
+      "password": "efsdfs"
+    },
+    {
+      "id": 7,
+      "name": "",
+      "email": "mathew@gmail.com",
+      "password": "123456"
+    }
+  ]
+}

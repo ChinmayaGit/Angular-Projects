@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row pt-3 justify-content-center">
+    <div class="col-sm-6">
+      <div class="card" style="width: 22rem; height: justify-content-center">
+        <div class="card-body">
+          <h5 class="card-title">Check Prime</h5>
+          <form (ngSubmit)="SignIn()">
+            <div class="form-group pb-3">
+              <input
+                type="email"
+                name="email"
+                [(ngModel)]="prime.id"
+                class="form-control"
+              />
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem; height: justify-content-center">
+        <div class="card-body">
+          <p>
+            {{ prime.id }} is {{ this.isPrime == false ? "not a" : "a" }} Prime
+            Number.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
